@@ -1,9 +1,13 @@
+//  /*
 //
-//  ContentView.swift
-//  BuddyAI
+//  Project: BuddyAI
+//  File: ContentView.swift
+//  Created by: Elaidzha Shchukin
+//  Date: 01.09.2023
 //
-//  Created by Elaidzha Shchukin on 01.09.2023.
+//  Status: in progress | Decorated
 //
+//  */
 
 import SwiftUI
 
