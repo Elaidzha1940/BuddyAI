@@ -60,18 +60,31 @@ struct ContentView: View {
                             .foregroundColor(.secondary)
                             .offset(x: -80, y: -30)
                     }
-                    .padding()
                 }
                 
                 HStack {
-                    
                     Image("keyboard")
+                        .padding(10)
+                        .background(Circle())
+                        .foregroundColor(.indigo.opacity(0.6))
+                    
+                    ZStack {
+                        Circle()
+                            .trim(from: 1, to: 4)
+                            .stroke(style: StrokeStyle(lineWidth: 1))
+                      
+                        Circle()
+                            //.scale(x: -1)
+                           // .rotation(.degrees(90))
+                            .stroke(style: StrokeStyle(lineWidth: 1))
+                        Circle()
+
+                    }
                 }
             }
             
             Spacer()
         }
-        .padding(.bottom)
         .preferredColorScheme(.dark)
     }
 }
