@@ -30,7 +30,7 @@ struct ContentView: View {
                     .frame(width: 110, height: 40)
                     .background(Color.white)
                     .cornerRadius(20)
-                    .offset(y: -80)
+                    .offset(y: -45)
                 }
                 
                 HStack {
@@ -41,9 +41,10 @@ struct ContentView: View {
                         .font(.system(size: 15, weight: .bold, design: .rounded))
                         .foregroundColor(.secondary)
                 }
-                .offset(y: -210)
-                                
+                .offset(y: -180)
+                
                 Image("brain")
+                    .offset(y: -100)
                 
                 HStack {
                     VStack(alignment: .center) {
@@ -63,27 +64,46 @@ struct ContentView: View {
                 }
                 
                 HStack {
-                    Image("keyboard")
-                        .padding(10)
-                        .background(Circle())
-                        .foregroundColor(.indigo.opacity(0.6))
+                    Button {
+                        //action
+                    } label: {
+                        Image("keyboard")
+                            .padding(10)
+                            .background(Circle())
+                            .foregroundColor(.indigo.opacity(0.6))
+                    }
+                    
+                    Spacer()
                     
                     ZStack {
-                        Circle()
-                            .trim(from: 1, to: 4)
-                            .stroke(style: StrokeStyle(lineWidth: 1))
                       
                         Circle()
-                            //.scale(x: -1)
-                           // .rotation(.degrees(90))
-                            .stroke(style: StrokeStyle(lineWidth: 1))
+                            .stroke(Color.secondary.opacity(0.3), lineWidth: 2)
+                            .frame(width: 160, height: 160)
+                        
                         Circle()
+                            .stroke(Color.secondary, lineWidth: 2)
+                            .frame(width: 120, height: 120)
+                        
+                        Circle()
+                            //.stroke(Color.secondary, lineWidth: 2)
+                            .frame(width: 80, height: 80)
+                        Image("micro")
+                    }
+                    
+                    Spacer()
 
+                    Button {
+                        //action
+                    } label: {
+                        Image("xxx")
+                            .padding()
+                            .background(Circle())
+                            .foregroundColor(.indigo.opacity(0.2))
                     }
                 }
+                .padding()
             }
-            
-            Spacer()
         }
         .preferredColorScheme(.dark)
     }
