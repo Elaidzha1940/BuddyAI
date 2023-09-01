@@ -13,19 +13,25 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var isImageScaled = false
-
+    
     var body: some View {
         
         VStack {
-            ZStack {
+            VStack {
                 Image("setka")
                     .offset(x: 120, y: -160)
                 
-                Button("Toggle Animation") {
+                Button("AI Buddy") {
                     withAnimation {
                         isImageScaled.toggle()
                     }
                 }
+                .font(.system(size: 20, weight: .bold, design: .rounded))
+                .foregroundColor(.black)
+                .frame(width: 110, height: 40)
+                .background(Color.white)
+                .cornerRadius(20)
+                .offset(y: -45)
                 .padding()
                 
                 if isImageScaled {
@@ -34,16 +40,16 @@ struct ContentView: View {
                 } else {
                     Image("brain")
                 }
-//                Button {
-//                } label: {
-//                    Text("AI Buddy")
-//                }
-//                .font(.system(size: 20, weight: .bold, design: .rounded))
-//                .foregroundColor(.black)
-//                .frame(width: 110, height: 40)
-//                .background(Color.white)
-//                .cornerRadius(20)
-//                .offset(y: -45)
+                //                Button {
+                //                } label: {
+                //                    Text("AI Buddy")
+                //                }
+                //                .font(.system(size: 20, weight: .bold, design: .rounded))
+                //                .foregroundColor(.black)
+                //                .frame(width: 110, height: 40)
+                //                .background(Color.white)
+                //                .cornerRadius(20)
+                //                .offset(y: -45)
             }
             
             HStack {
@@ -56,8 +62,8 @@ struct ContentView: View {
             }
             .offset(y: -180)
             
-//            Image("brain")
-//                .offset(y: -100)
+            //            Image("brain")
+            //                .offset(y: -100)
             
             HStack {
                 VStack() {
