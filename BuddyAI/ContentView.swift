@@ -14,7 +14,7 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         
-        VStack(spacing: 1) {
+        VStack {
             VStack {
                 ZStack {
                     Image("setka")
@@ -30,26 +30,48 @@ struct ContentView: View {
                     .frame(width: 110, height: 40)
                     .background(Color.white)
                     .cornerRadius(20)
+                    .offset(y: -80)
                 }
                 
                 HStack {
                     Circle()
                         .frame(width: 6, height: 6)
+                    
                     Text("Online")
                         .font(.system(size: 15, weight: .bold, design: .rounded))
                         .foregroundColor(.secondary)
-                    
                 }
-                .padding(.bottom, 150)
+                .offset(y: -210)
                                 
                 Image("brain")
                 
-                Spacer()
+                HStack {
+                    VStack(alignment: .center) {
+                        Text("What are the top trending\ncollaborting interface")
+                            .font(.system(size: 25, weight: .semibold, design: .rounded))
+                            .foregroundColor(.white)
+                        
+                        Text("design")
+                            .font(.system(size: 25, weight: .bold, design: .rounded))
+                            .foregroundColor(.secondary)
+                            .offset(x: 140, y: -30)
+                        Text("tools 2023")
+                            .font(.system(size: 25, weight: .bold, design: .rounded))
+                            .foregroundColor(.secondary)
+                            .offset(x: -80, y: -30)
+                    }
+                    .padding()
+                }
                 
-                Text("")
-
+                HStack {
+                    
+                    Image("keyboard")
+                }
             }
+            
+            Spacer()
         }
+        .padding(.bottom)
         .preferredColorScheme(.dark)
     }
 }
