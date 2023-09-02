@@ -31,8 +31,7 @@ struct ContentView: View {
                 .frame(width: 110, height: 40)
                 .background(Color.white)
                 .cornerRadius(20)
-                .offset(y: -45)
-                .padding()
+                .offset(y: -145)
                 
                 if isImageScaled {
                     Image("brain")
@@ -40,30 +39,17 @@ struct ContentView: View {
                 } else {
                     Image("brain")
                 }
-                //                Button {
-                //                } label: {
-                //                    Text("AI Buddy")
-                //                }
-                //                .font(.system(size: 20, weight: .bold, design: .rounded))
-                //                .foregroundColor(.black)
-                //                .frame(width: 110, height: 40)
-                //                .background(Color.white)
-                //                .cornerRadius(20)
-                //                .offset(y: -45)
-            }
-            
-            HStack {
-                Circle()
-                    .frame(width: 6, height: 6)
                 
-                Text("Online")
-                    .font(.system(size: 15, weight: .bold, design: .rounded))
-                    .foregroundColor(.secondary)
+                HStack {
+                    Circle()
+                        .frame(width: 6, height: 6)
+                    
+                    Text("Online")
+                        .font(.system(size: 15, weight: .bold, design: .rounded))
+                        .foregroundColor(.secondary)
+                }
+                .offset(y: -300)
             }
-            .offset(y: -180)
-            
-            //            Image("brain")
-            //                .offset(y: -100)
             
             HStack {
                 VStack() {
@@ -89,19 +75,25 @@ struct ContentView: View {
                 
                 Spacer()
                 
-                ZStack {
-                    Circle()
-                        .stroke(Color.secondary.opacity(0.3), lineWidth: 2)
-                        .frame(width: 160, height: 160)
-                    
-                    Circle()
-                        .stroke(Color.secondary.opacity(0.5), lineWidth: 2)
-                        .frame(width: 120, height: 120)
-                    
-                    Circle()
-                        .frame(width: 90, height: 90)
-                    Image("micro")
+                Button("") {
+                    withAnimation {
+                        isImageScaled.toggle()
+                    }
+                    ZStack {
+                        Circle()
+                            .stroke(Color.secondary.opacity(0.3), lineWidth: 2)
+                            .frame(width: 160, height: 160)
+                        
+                        Circle()
+                            .stroke(Color.secondary.opacity(0.5), lineWidth: 2)
+                            .frame(width: 120, height: 120)
+                        
+                        Circle()
+                            .frame(width: 90, height: 90)
+                        Image("micro")
+                    }
                 }
+               
                 
                 Spacer()
                 

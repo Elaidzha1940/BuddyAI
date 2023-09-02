@@ -8,26 +8,12 @@
 import SwiftUI
 
 struct Animate: View {
-    
-    @State private var isImageScaled = false
-    
+        
     var body: some View {
         
         VStack {
             
-            Button("Toggle Animation") {
-                withAnimation {
-                    isImageScaled.toggle()
-                }
-            }
-            .padding()
-            
-            if isImageScaled {
-                Image("brain")
-                    .scaleEffect(1.2)
-            } else {
-                Image("brain")
-            }
+            Micro()
         }
     }
 }
@@ -38,10 +24,25 @@ struct Animate_Previews: PreviewProvider {
     }
 }
 
-//struct CustomImageView: View {
-//    var body: some View {
-//
-//        Image("brain")
-//
-//    }
-//}
+struct Micro: View {
+    var body: some View {
+        
+        Button {
+            //action
+        } label: {
+            ZStack {
+                Circle()
+                    .stroke(Color.secondary.opacity(0.3), lineWidth: 2)
+                    .frame(width: 160, height: 160)
+                
+                Circle()
+                    .stroke(Color.secondary.opacity(0.5), lineWidth: 2)
+                    .frame(width: 120, height: 120)
+                
+                Circle()
+                    .frame(width: 90, height: 90)
+                Image("micro")
+            }
+        }
+    }
+}
