@@ -48,8 +48,9 @@ struct ContentView: View {
                         .font(.system(size: 15, weight: .bold, design: .rounded))
                         .foregroundColor(.secondary)
                 }
-                .offset(y: -300)
+               .offset(y: -400)
             }
+            Spacer()
             
             HStack {
                 VStack() {
@@ -75,10 +76,10 @@ struct ContentView: View {
                 
                 Spacer()
                 
-                Button("") {
+                Button("button") {
                     withAnimation {
                         isImageScaled.toggle()
-                    }
+                    } 
                     ZStack {
                         Circle()
                             .stroke(Color.secondary.opacity(0.3), lineWidth: 2)
