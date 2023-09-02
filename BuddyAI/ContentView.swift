@@ -48,7 +48,7 @@ struct ContentView: View {
                         .font(.system(size: 15, weight: .bold, design: .rounded))
                         .foregroundColor(.secondary)
                 }
-               .offset(y: -400)
+                .offset(y: -430)
             }
             Spacer()
             
@@ -76,10 +76,10 @@ struct ContentView: View {
                 
                 Spacer()
                 
-                Button("button") {
-                    withAnimation {
-                        isImageScaled.toggle()
-                    } 
+                
+                Button {
+                    //action
+                } label: {
                     ZStack {
                         Circle()
                             .stroke(Color.secondary.opacity(0.3), lineWidth: 2)
@@ -91,10 +91,10 @@ struct ContentView: View {
                         
                         Circle()
                             .frame(width: 90, height: 90)
+                            .foregroundColor(.white)
                         Image("micro")
                     }
                 }
-               
                 
                 Spacer()
                 
@@ -112,7 +112,6 @@ struct ContentView: View {
         .preferredColorScheme(.dark)
     }
 }
-
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
