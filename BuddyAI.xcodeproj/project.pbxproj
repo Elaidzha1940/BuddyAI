@@ -11,7 +11,6 @@
 		E44E33412AA1F24800B590C8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44E33402AA1F24800B590C8 /* ContentView.swift */; };
 		E44E33432AA1F24900B590C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E44E33422AA1F24900B590C8 /* Assets.xcassets */; };
 		E44E33462AA1F24900B590C8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E44E33452AA1F24900B590C8 /* Preview Assets.xcassets */; };
-		E44E334D2AA22F8E00B590C8 /* Animate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44E334C2AA22F8E00B590C8 /* Animate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,7 +19,6 @@
 		E44E33402AA1F24800B590C8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E44E33422AA1F24900B590C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E44E33452AA1F24900B590C8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		E44E334C2AA22F8E00B590C8 /* Animate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +55,6 @@
 				E44E33402AA1F24800B590C8 /* ContentView.swift */,
 				E44E33422AA1F24900B590C8 /* Assets.xcassets */,
 				E44E33442AA1F24900B590C8 /* Preview Content */,
-				E44E334C2AA22F8E00B590C8 /* Animate.swift */,
 			);
 			path = BuddyAI;
 			sourceTree = "<group>";
@@ -142,7 +139,6 @@
 			files = (
 				E44E33412AA1F24800B590C8 /* ContentView.swift in Sources */,
 				E44E333F2AA1F24800B590C8 /* BuddyAIApp.swift in Sources */,
-				E44E334D2AA22F8E00B590C8 /* Animate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

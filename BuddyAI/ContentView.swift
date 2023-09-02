@@ -76,7 +76,6 @@ struct ContentView: View {
                 
                 Spacer()
                 
-                
                 Button {
                     //action
                 } label: {
@@ -108,6 +107,8 @@ struct ContentView: View {
                 }
             }
             .padding()
+            Spacer()
+            Spacer()
         }
         .preferredColorScheme(.dark)
     }
